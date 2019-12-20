@@ -1,0 +1,7 @@
+body {
+  margin: 20px !important;
+}
+
+form.submitted input.ng-invalid, input.ng-dirty.ng-invalid {
+ border: 1px solid red;
+}

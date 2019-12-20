@@ -1,0 +1,38 @@
+<form [formGroup]="form">
+	<div class="field">
+		<div class="control">
+			<input class="input" formControlName="name" placeholder="Name">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control" controlErrorContainer>
+      <label class="checkbox">
+      <input type="checkbox" formControlName="terms" [customErrors]="customErrors">
+      I agree to the <a href="#">terms and conditions</a>
+      </label>
+    </div>
+  </div>
+  <div formGroupName="address" class="field">
+    <div class="field">
+      <div class="control">
+        <input class="input" formControlName="city" placeholder="City">
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <input class="input" formControlName="country" placeholder="Country">
+      </div>
+    </div>
+  </div>
+  <div class="control">
+    <button class="button is-link is-small">Submit</button>
+  </div>
+</form>
+
+
+<!-- <h1>Standalone</h1>
+<div class="field">
+  <div class="control">
+    <input class="input" [formControl]="control" placeholder="Name">
+  </div>
+</div> -->
